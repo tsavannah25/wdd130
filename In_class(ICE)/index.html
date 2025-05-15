@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!--This is a comment to see if this will work...-->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Education</title>
- body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  margin-top: 100px;
-  background-color: #f4f4f4;
- }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Education</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background-color: darkblue;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      color: white;
+    }
+
+    h1 {
+      color: #a5c2d8;
+      text-align: center;
+    }
 
     .title {
       font-size: 48px;
@@ -22,31 +38,63 @@
     .title:hover {
       color: black;
     }
+
+    .quote {
+      font-style: italic;
+      font-size: 1.2em;
+      margin-bottom: 5px;
+    }
+
+    .author {
+      text-align: right;
+      font-weight: bold;
+      margin-top: 0;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 20px auto;
+      border-radius: 10px;
+    }
+
+    .title-line {
+      display: block;
+      text-align: center;
+      margin-top: 10px;
+      font-style: italic;
+      font-size: 1em;
+    }
   </style>
 </head>
 <body>
-  <h1 class="title">Education</h1>
-</body>
-</html>
-</head>
-<body>
-    <div class="container">
-        <h1 class="title">Education</h1>
-        <p class="quote">
-            Education is the difference between wishing you could help others & being able to help them</p>
-        <p class="author">--President Nelson</p>
-        <ul class="principles">
-            <li>Faith in the Lord Jesus Christ</li>
-            <li>Repentance</li>
-            <li>Baptism by immersion for the remission of sins</li>
-            <li>Laying on of the hands for the gift of the Holy Ghost</li>
+  <div class="container">
+    <h1 class="title">Education</h1>
 
-            <img src="russell_nelson_official_portrait_2018.jpeg" alt="President Nelson" width="40%">
-        <p class="quote">
-                "Because of the Savior's Atonement, His gospel provides an invitation to keep changing, growing, and becoming more pure." </p>
-                <p class="author">— President Nelson</p>
-                <span class="title-line">President of the church of Jesus Christ of Latter-day Saints</span>
-        </p>
-    </div>
+    <p class="quote">Education is the difference between wishing you could help others & being able to help them</p>
+    <p class="author">--President Nelson</p>
+
+    <ul>
+      <li>Faith in the Lord Jesus Christ</li>
+      <li>Repentance</li>
+      <li>Baptism by immersion for the remission of sins</li>
+      <li>Laying on of the hands for the gift of the Holy Ghost</li>
+    </ul>
+
+    <!-- Ensure this image file exists in your repo and matches the path exactly -->
+    <img src="russell_nelson_official_portrait_2018.jpeg" alt="President Nelson" />
+
+    <p class="quote">
+      "Because of the Savior's Atonement, His gospel provides an invitation to keep changing, growing, and becoming more pure."
+    </p>
+    <p class="author">— President Nelson</p>
+    <span class="title-line">President of the Church of Jesus Christ of Latter-day Saints</span>
+  </div>
 </body>
 </html>
