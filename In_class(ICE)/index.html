@@ -1,100 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Education</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
-      padding: 20px;
-    }
-
-    .container {
-      max-width: 700px;
-      margin: auto;
-      background-color: darkblue;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      color: white;
-    }
-
-    h1 {
-      color: #a5c2d8;
-      text-align: center;
-    }
-
-    .title {
-      font-size: 48px;
-      color: gray;
-      transition: color 0.3s ease;
-      cursor: pointer;
-    }
-
-    .title:hover {
-      color: black;
-    }
-
-    .quote {
-      font-style: italic;
-      font-size: 1.2em;
-      margin-bottom: 5px;
-    }
-
-    .author {
-      text-align: right;
-      font-weight: bold;
-      margin-top: 0;
-    }
-
-    ul {
-      list-style-type: disc;
-      padding-left: 20px;
-    }
-
-    img {
-      display: block;
-      max-width: 100%;
-      height: auto;
-      margin: 20px auto;
-      border-radius: 10px;
-    }
-
-    .title-line {
-      display: block;
-      text-align: center;
-      margin-top: 10px;
-      font-style: italic;
-      font-size: 1em;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education - Hover Effect</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
+  <header>
     <h1 class="title">Education</h1>
-
-    <p class="quote">Education is the difference between wishing you could help others & being able to help them</p>
-    <p class="author">--President Nelson</p>
-
-    <ul>
-      <li>Faith in the Lord Jesus Christ</li>
-      <li>Repentance</li>
-      <li>Baptism by immersion for the remission of sins</li>
-      <li>Laying on of the hands for the gift of the Holy Ghost</li>
-    </ul>
-
-    <img src="russell_nelson_official_portrait_2018.jpeg" alt="President Nelson" />
-
-    <p class="quote">
-      "Because of the Savior's Atonement, His gospel provides an invitation to keep changing, growing, and becoming more pure."
-    </p>
-    <p class="author">— President Nelson</p>
-    <span class="title-line">President of the Church of Jesus Christ of Latter-day Saints</span>
-  </div>
+  </header>
+  <main>
+    <section class="quote">
+      <blockquote>
+        <p>Education is the difference between wishing you could help others & being able to help them.</p>
+        <footer>— President Nelson</footer>
+      </blockquote>
+    </section>
+    <section class="principles">
+      <h2>Core Principles</h2>
+      <ul>
+        <li>Faith in the Lord Jesus Christ</li>
+        <li>Repentance</li>
+        <li>Baptism by immersion for the remission of sins</li>
+        <li>Laying on of hands for the gift of the Holy Ghost</li>
+      </ul>
+    </section>
+    <section class="reflection">
+      <blockquote>
+        <p>Because of the Savior's Atonement, His gospel provides an invitation to keep changing, growing, and becoming more pure.</p>
+        <footer>— Russell M. Nelson, President of the Church of Jesus Christ of Latter-day Saints</footer>
+      </blockquote>
+    </section>
+  </main>
 </body>
 </html>
-<!--it wont push...-->
