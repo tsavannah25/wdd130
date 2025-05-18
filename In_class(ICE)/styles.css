@@ -1,98 +1,90 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Body Styling */
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    padding: 20px;
-  }
-  
-  /* Header Styling */
-  header {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .title {
-    font-size: 3rem;
-    color: #333;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: color 0.3s ease;
-  }
-  
-  .title:hover {
-    color: black;
-  }
-  
-  /* Main Content Styling */
-  main {
-    max-width: 800px;
+/* ---------- Rafting Site Additions ---------- */
+
+/* Page wrapper */
+#content {
+    max-width: 1600px;
     margin: 0 auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Quote Section Styling */
-  .quote {
-    font-style: italic;
-    margin-bottom: 20px;
-  }
-  
-  .quote p {
-    font-size: 1.2rem;
-    color: #555;
-  }
-  
-  .quote footer {
-    text-align: right;
-    font-size: 1rem;
-    color: #777;
-  }
-  
-  /* Core Principles Section Styling */
-  .principles {
-    margin-bottom: 20px;
-  }
-  
-  .principles h2 {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .principles ul {
-    list-style-type: none;
-  }
-  
-  .principles li {
-    font-size: 1.1rem;
-    color: #555;
-    margin-bottom: 5px;
-  }
-  
-  /* Reflection Section Styling */
-  .reflection blockquote {
-    font-style: italic;
-    margin-top: 20px;
-  }
-  
-  .reflection p {
-    font-size: 1.2rem;
-    color: #555;
-  }
-  
-  .reflection footer {
-    text-align: right;
-    font-size: 1rem;
-    color: #777;
-  }
-  
+}
+
+/* Hero section image */
+#hero-img {
+    width: 100%;
+}
+
+/* Logo and card icons */
+.logo {
+    width: 80px;
+}
+.icon {
+    width: 80px;
+}
+
+/* Centering */
+nav a,
+#hero-msg h1, #hero-msg h4,
+.button-box,
+main section {
+    text-align: center;
+}
+
+/* Background color sections */
+body {
+    background-color: #fcfbfb;
+}
+header {
+    background-color: rgba(20, 30, 13, 0.7);
+}
+nav a:hover {
+    background-color: black;
+}
+.book, .join {
+    background-color: #3a3a3a;
+}
+.book:hover, .join:hover {
+    background-color: #000;
+}
+#background {
+    height: 725px;
+    background-color: #e2e2e2;
+}
+.msg {
+    background-color: #ffffff;
+}
+footer {
+    background-color: #333;
+}
+
+/* Text colors */
+nav a,
+.home-title,
+h4,
+.book, .join,
+.msg h2,
+.msg p,
+footer p,
+footer a {
+    color: #fcfbfb;
+}
+
+nav a:hover,
+.book:hover,
+.join:hover {
+    color: #d9c2a3;
+}
+
+/* Remove link underlines */
+nav a,
+.book, .join,
+footer a {
+    text-decoration: none;
+}
+
+/* Add underline on footer hover */
+footer p a:hover {
+    text-decoration: underline;
+}
+
+/* Footer text sizing */
+footer p {
+    font-size: 1.2em;
+}
