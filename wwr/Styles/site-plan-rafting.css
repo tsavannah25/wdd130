@@ -4,7 +4,7 @@
 
 /*Jaeden wuz here */
 :root {
-  --primary-color: #1E3F66;
+  --primary-color: #1e3f66;
   --secondary-color: #006494;
   --accent1-color: #2C6E49;
   --accent2-color: #F1F1F1;
@@ -13,8 +13,8 @@
   --heading-font: 'Rock Salt', 'IM Fell French Canon', cursive;
   --paragraph-font: 'Raleway', 'Lato', Helvetica, sans-serif;
 
-  --headline-color-on-white: #396E94;
-  --headline-color-on-color: white;
+  --headline-color-on-white: #a8c0d0;
+  --headline-color-on-color: rgb(168, 156, 222);
   --paragraph-color-on-white: #396E94;
   --paragraph-color-on-color: white;
   --paragraph-background-color: #396E94;
@@ -72,6 +72,10 @@ header {
   padding: 1em;
   background-color: var(--paragraph-background-color);
   color: var(--headline-color-on-color);
+  text-align: center;
+  background-color: #1E3F66;
+  color: white;
+  padding: 1em;
 }
 
 /* Navigation */
@@ -83,340 +87,33 @@ nav {
   padding: 1em;
 }
 
-nav a {
-  color: var(--nav-link-color);
-  text-decoration: none;
-  padding: 0.5em 1em;
-  font-size: 1.1em;
-}
-
-nav a:hover {
-  color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
-  border-radius: 5px;
-}
-
-/* Cards */
-.rivers-card, .camping-card, .rapids-card {
-  margin: 50px 0;
-  text-align: center;
-  padding: 20px;
-}
-
-.card-img {
-  border: 10px solid var(--accent1-color);
-  box-sizing: border-box;
-  padding: 5px;
-  width: 90%;
-  max-width: 500px;
-}
-
-.icon {
-  padding-top: 10px;
-  width: 50px;
-}
-
-.mountains {
-  margin: 40px auto;
-  width: 95%;
-  max-width: 800px;
-}
-
-/* CTA Section */
-.msg {
-  background-color: #6f7364;
-  padding: 35px;
-  line-height: 1.5em;
-  text-align: center;
-}
-
-.msg p {
-  font-size: 0.8em;
-  padding-bottom: 15px;
-  color: var(--paragraph-color-on-color);
-}
-
-.book, .join {
-  background-color: #d9c2a3;
-  color: black;
-  text-decoration: none;
-  font-size: 18px;
-  padding: 15px 30px;
-  margin-top: 50px;
-  border-radius: 5px;
-  display: inline-block;
-}
-
-/* Footer */
-footer {
-  background-color: var(--neutral-color);
-  color: white;
-  padding: 25px 50px;
-  margin-top: 100px;
-  text-align: center;
-}
-
-footer a {
-  color: white;
-  text-decoration: underline;
-  margin: 5px;
-  display: inline-block;
-}
-
-footer .social img {
-  padding-top: 15px;
-  width: 40px;
-}
-
-/* Site Map */
-.colors {
-  width: 100%;
-  min-width: 350px;
-  margin: 30px auto;
-  text-align: center;
-}
-
-.colors th {
-  background-color: #999;
-}
-
-.colors td {
-  width: 20%;
-  height: 3em;
-}
-
-.primary { background-color: var(--primary-color); }
-.secondary { background-color: var(--secondary-color); }
-.accent1 { background-color: var(--accent1-color); }
-.accent2 { background-color: var(--accent2-color); }
-.neutral  { background-color: var(--neutral-color); }
-
-/* Sitemap Grid */
-.sitemap {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(6, 15%);
-  grid-template-rows: 3em 1.5em 1.5em 3em;
-  grid-template-areas:
-    ". . home home . ."
-    ". . . top . ."
-    ". left left right right ."
-    "page2 page2 . . page3 page3";
-}
-
-.sitemap > div {
-  text-align: center;
-}
-
-.sm-home, .sm-page2, .sm-page3 {
-  background-color: #ccc;
-  line-height: 3em;
-}
-
-.sm-home  { grid-area: home; }
-.sm-page2 { grid-area: page2; }
-.sm-page3 { grid-area: page3; }
-.top      { grid-area: top; border-left: 1px solid; }
-.left     { grid-area: left; border-top: 1px solid; border-left: 1px solid; }
-.right    { grid-area: right; border-top: 1px solid; border-right: 1px solid; }
-a/* Cleaned & Organized CSS for White Water Rafting Project */
-
-/* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Rock+Salt&display=swap');
-
-/*Jaeden wuz here */
-:root {
-  --primary-color: #1E3F66;
-  --secondary-color: #006494;
-  --accent1-color: #2C6E49;
-  --accent2-color: #F1F1F1;
-  --neutral-color: #3B3B3B;
-
-  --heading-font: 'Rock Salt', 'IM Fell French Canon', cursive;
-  --paragraph-font: 'Raleway', 'Lato', Helvetica, sans-serif;
-
-  --headline-color-on-white: #396E94;
-  --headline-color-on-color: white;
-  --paragraph-color-on-white: #396E94;
-  --paragraph-color-on-color: white;
-  --paragraph-background-color: #396E94;
-  --nav-link-color: #fcfbfb;
-  --nav-background-color: #D4AC0D;
-  --nav-hover-link-color: white;
-  --nav-hover-background-color: #396E94;
-}
-
-/* Reset styles */
-body {
-  background-color: #fcfbfb;
-  font-family: var(--paragraph-font);
-  font-size: 22px;
-  margin: 0 auto;
-  padding: 4em;
-  max-width: 960px;
-  text-align: center;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font);
-  color: var(--headline-color-on-white);
-  margin: 0;
-  text-align: center;
-}
-
-/* General content styling */
-p {
-  font-family: var(--paragraph-font);
-  color: var(--paragraph-color-on-white);
-  padding: 1em;
-}
-
-p.colored {
-  background-color: var(--paragraph-background-color);
-  color: var(--paragraph-color-on-color);
-}
-
-img {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  height: auto;
-}
-
-hr {
-  height: 3px;
-  margin: 35px 0;
-  background: var(--accent1-color);
-}
-
-/* General content styling */
-header {
-  padding: 1em;
-  background-color: var(--paragraph-background-color);
-  color: var(--headline-color-on-color);
-}
-
-/* Navigation */
 nav {
-  background-color: var(--nav-background-color);
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
+  background-color: #2D936C;
   padding: 1em;
+  text-align: center;
 }
 
 nav a {
-  color: var(--nav-link-color);
+  color: white;
+  margin: 0 1em;
   text-decoration: none;
-  padding: 0.5em 1em;
-  font-size: 1.1em;
+  font-weight: bold;
 }
 
 nav a:hover {
-  color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
-  border-radius: 5px;
-}
-
-/* Cards */
-.rivers-card, .camping-card, .rapids-card {
-  margin: 50px 0;
-  text-align: center;
-  padding: 20px;
-}
-
-.card-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.icon-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 10px;
-}
-
-.card-img {
-  border: 10px solid var(--accent1-color);
-  box-sizing: border-box;
-  padding: 5px;
-  width: 90%;
-  max-width: 500px;
-}
-
-.icon {
-  width: 50px;
-}
-
-.mountains {
-  margin: 40px auto;
-  width: 95%;
-  max-width: 800px;
-}
-
-/* CTA Section */
-.msg {
-  background-color: #6f7364;
-  padding: 35px;
-  line-height: 1.5em;
-  text-align: center;
-}
-
-.msg p {
-  font-size: 0.8em;
-  padding-bottom: 15px;
-  color: var(--paragraph-color-on-color);
-}
-
-.book, .join {
-  background-color: #d9c2a3;
-  color: black;
-  text-decoration: none;
-  font-size: 18px;
-  padding: 15px 30px;
-  margin-top: 50px;
-  border-radius: 5px;
-  display: inline-block;
-}
-
-/* Footer */
-footer {
-  background-color: var(--neutral-color);
-  color: white;
-  padding: 25px 50px;
-  margin-top: 100px;
-  text-align: center;
-}
-
-footer a {
-  color: white;
-  text-decoration: underline;
-  margin: 5px;
-  display: inline-block;
-}
-
-footer .social img {
-  padding-top: 15px;
-  width: 40px;
+  color: #EEE5E9;
 }
 
 
-
-/* River Page Styles */
 body {
   margin: 0;
   font-family: 'Raleway', sans-serif;
-  background: linear-gradient(to bottom, #9be0df, #4ca1c3);
+  background: linear-gradient(to bottom, #dfe8e7, #e0e6e9);
   color: #1E3F66;
 }
 
 header {
-  background-color: white;
+  background-color: #1E3F66;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -458,42 +155,6 @@ main {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.rapid-section img {
-  width: 300px;
-  max-width: 100%;
-  border-radius: 10px;
-}
-
-.rapid-text {
-  max-width: 500px;
-  text-align: left;
-}
-
-.rapid-text h2 {
-  font-size: 1.8em;
-  margin-bottom: 0.5em;
-}
-
-.rapid-text p {
-  font-size: 1em;
-  line-height: 1.5;
-}
-
-footer {
-  background-color: #1E3F66;
-  color: white;
-  text-align: center;
-  padding: 1em;
-  margin-top: 4em;
-}
-
-footer nav a {
-  color: white;
-  margin: 0 1em;
-  text-decoration: underline;
-}
-
-
 /* Site Map */
 .colors {
   width: 100%;
@@ -516,32 +177,3 @@ footer nav a {
 .accent1 { background-color: var(--accent1-color); }
 .accent2 { background-color: var(--accent2-color); }
 .neutral  { background-color: var(--neutral-color); }
-
-/* Sitemap Grid */
-.sitemap {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(6, 15%);
-  grid-template-rows: 3em 1.5em 1.5em 3em;
-  grid-template-areas:
-    ". . home home . ."
-    ". . . top . ."
-    ". left left right right ."
-    "page2 page2 . . page3 page3";
-}
-
-.sitemap > div {
-  text-align: center;
-}
-
-.sm-home, .sm-page2, .sm-page3 {
-  background-color: #ccc;
-  line-height: 3em;
-}
-
-.sm-home  { grid-area: home; }
-.sm-page2 { grid-area: page2; }
-.sm-page3 { grid-area: page3; }
-.top      { grid-area: top; border-left: 1px solid; }
-.left     { grid-area: left; border-top: 1px solid; border-left: 1px solid; }
-.right    { grid-area: right; border-top: 1px solid; border-right: 1px solid; }
