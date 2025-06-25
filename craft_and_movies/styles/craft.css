@@ -1,11 +1,11 @@
 * {
     box-sizing: border-box;
   }
-  body {
+body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
     background-color: #fef9f5;
-  }
+}
   header {
     background-color: #a3d9a5;
     padding: 1rem;
