@@ -170,3 +170,19 @@ nav a {
     height: 200px;
   }
 }
+
+.footer {
+  font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fefefe;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  footer {
+    background-color: #d5e8d5;
+    text-align: center;
+    padding: 2rem 1rem 1rem;
+    border-bottom: 2px solid #a8d5a8;
+  }
